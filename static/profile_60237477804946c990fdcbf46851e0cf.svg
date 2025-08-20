@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720">
+  <defs>
+    <style>
+      .bg{fill:#0b0f14}
+      .seq-activation{fill:#2ecc71;opacity:.18}
+      .seq-venus{fill:#ff4d8d;opacity:.18}
+      .seq-pearl{fill:#3ea7ff;opacity:.18}
+      .node{fill:#0b0f14;stroke:#cfd8dc;stroke-width:2}
+      .edge{stroke:#607d8b;stroke-width:2;fill:none}
+      .label{font:500 16px/1.2 ui-sans-serif,system-ui; fill:#e8f1f5; text-anchor:middle}
+      .sub{font:400 13px/1.2 ui-sans-serif,system-ui; fill:#a7bdc9}
+      .title{font:700 20px/1 ui-sans-serif,system-ui; fill:#cfe9ff}
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="100%" height="100%"/>
+
+  <circle cx="500" cy="160" r="140" class="seq-activation"/>
+  <ellipse cx="280" cy="470" rx="170" ry="140" class="seq-venus"/>
+  <ellipse cx="720" cy="470" rx="170" ry="140" class="seq-pearl"/>
+
+  <path class="edge" d="M500 60 L640 160 L500 260 L360 160 Z"/>
+  <path class="edge" d="M360 160 L500 60"/>
+  <path class="edge" d="M640 160 L500 260"/>
+
+  <circle class="node" cx="500" cy="60" r="34"/><text class="label" x="500" y="56">Life’s Work</text><text class="sub" x="500" y="76">GK 25.2</text>
+  <circle class="node" cx="640" cy="160" r="34"/><text class="label" x="640" y="156">Evolution</text><text class="sub" x="640" y="176">GK 46.2</text>
+  <circle class="node" cx="500" cy="260" r="34"/><text class="label" x="500" y="256">Radiance</text><text class="sub" x="500" y="276">GK 25.2</text>
+  <circle class="node" cx="360" cy="160" r="34"/><text class="label" x="360" y="156">Purpose</text><text class="sub" x="360" y="176">GK 46.2</text>
+
+  <path class="edge" d="M170 420 L280 380 L280 470 L280 560 L200 510"/>
+  <circle class="node" cx="170" cy="420" r="30"/><text class="label" x="170" y="416">Attraction</text><text class="sub" x="170" y="436">GK 25.3</text>
+  <circle class="node" cx="280" cy="380" r="30"/><text class="label" x="280" y="376">IQ</text><text class="sub" x="280" y="396">GK 25.1</text>
+  <circle class="node" cx="280" cy="470" r="30"/><text class="label" x="280" y="466">EQ</text><text class="sub" x="280" y="486">GK 25.4</text>
+  <circle class="node" cx="280" cy="560" r="30"/><text class="label" x="280" y="556">SQ</text><text class="sub" x="280" y="576">GK 25.4</text>
+  <circle class="node" cx="200" cy="510" r="30"/><text class="label" x="200" y="506">Core / Voc</text><text class="sub" x="200" y="526">GK 25.4</text>
+
+  <path class="edge" d="M760 420 L680 510 L760 600 L840 510 Z"/>
+  <circle class="node" cx="760" cy="420" r="30"/><text class="label" x="760" y="416">Brand</text><text class="sub" x="760" y="436">GK 25.2</text>
+  <circle class="node" cx="680" cy="510" r="30"/><text class="label" x="680" y="506">Culture</text><text class="sub" x="680" y="526">GK 25.3</text>
+  <circle class="node" cx="760" cy="600" r="30"/><text class="label" x="760" y="596">Pearl</text><text class="sub" x="760" y="616">GK 25.3</text>
+  <circle class="node" cx="840" cy="510" r="30"/><text class="label" x="840" y="506">Vocation</text><text class="sub" x="840" y="526">GK 25.4</text>
+
+  <text class="title" x="500" y="700">Test — Hologenetic Profile</text>
+</svg>

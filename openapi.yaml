@@ -1,0 +1,63 @@
+openapi: 3.0.1
+info:
+  title: GeneGraph API
+  version: "1.0.0"
+servers:
+  - url: https://7c4d905ab596.ngrok-free.app
+paths:
+  /compute-profile:
+    post:
+      operationId: computeProfile
+      summary: Compute Gene Keys + optional Human Design and render SVG/PNG
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [birthDate, birthPlace]
+              properties:
+                name:
+                  type: string
+                  description: "Label only (used as title on SVG)"
+                birthDate:
+                  type: string
+                  example: "1991-07-17"
+                birthTime:
+                  type: string
+                  example: "13:40"
+                birthPlace:
+                  type: string
+                  example: "Mexico City, Mexico"
+                designMode:
+                  type: string
+                  enum: [days, solarArc]
+                  default: days
+                includeHD:
+                  type: boolean
+                  default: false
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  meta: 
+                    type: object
+                  bodies: 
+                    type: object
+                  geneKeys: 
+                    type: object
+                  humanDesign: 
+                    type: object
+                    nullable: true
+                  assets:
+                    type: object
+                    properties:
+                      profileSVG:
+                        type: string
+                      profilePNG:
+                        type: string
+                        nullable: true

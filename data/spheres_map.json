@@ -1,0 +1,21 @@
+{
+  "activation": {
+    "LifesWork": {"planet": "sun", "mode": "natal", "aliases": ["Brand"]},
+    "Evolution": {"planet": "earth", "mode": "natal"},
+    "Radiance":  {"planet": "sun", "mode": "design"},
+    "Purpose":   {"planet": "earth", "mode": "design"}
+  },
+  "venus": {
+    "Attraction": {"planet": "moon",   "mode": "design"},
+    "IQ":         {"planet": "venus",  "mode": "natal"},
+    "EQ":         {"planet": "mars",   "mode": "natal"},
+    "SQ":         {"planet": "venus",  "mode": "design"},
+    "Core":       {"planet": "mars",   "mode": "design", "aliases": ["Vocation"]}
+  },
+  "pearl": {
+    "Culture": {"planet": "jupiter", "mode": "design"},
+    "Pearl":   {"planet": "jupiter", "mode": "natal"},
+    "Vocation": {"planet": "mars", "mode": "design"},
+    "Brand":   {"planet": "sun", "mode": "natal"}
+  }
+}

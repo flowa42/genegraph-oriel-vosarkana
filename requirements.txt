@@ -1,0 +1,14 @@
+Flask==3.0.3
+gunicorn==22.0.0
+requests==2.32.3
+python-dateutil==2.9.0
+timezonefinder==6.5.2
+pytz==2024.1
+numpy==1.26.4
+skyfield==1.49
+jplephem==2.21
+cairosvg==2.7.1
+pyswisseph
+astral
+ephem
+
