@@ -3,6 +3,7 @@ from flask import Flask, request, jsonify
 import swisseph as swe
 from datetime import datetime
 
+
 # -----------------------
 # Flask app
 # -----------------------
@@ -85,6 +86,5 @@ def compute_profile():
 # Run
 # -----------------------
 if __name__ == "__main__":
-    # Render assigns $PORT automatically
-    port = int(os.environ.get("PORT", 8080))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=8080)
+
