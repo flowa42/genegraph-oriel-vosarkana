@@ -1,2 +1,1 @@
-web: gunicorn genegraph.server:app
-
+web: gunicorn server:app
